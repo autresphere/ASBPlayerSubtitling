@@ -1,0 +1,31 @@
+1
+00:00:00,000 --> 00:00:03,000
+Welcome to ASBPlayerSubtitling!
+
+2
+00:00:04,000 --> 00:00:07,000
+Subtitles are fully synchronized with AVPlayer.
+
+3
+00:00:07,500 --> 00:00:11,000
+SRT format is the supported standard.
+
+4
+00:00:11,500 --> 00:00:15,000
+Subtitles can be shown
+on two lines.
+
+5
+00:00:16,000 --> 00:00:19,000
+Subtitles can also
+be shown on three
+lines or more.
+
+6
+00:00:20,000 --> 00:00:24,000
+UILabel is used to show the subtitle,
+you can fully customize it.
+
+7
+00:00:24,500 --> 00:00:30,000
+Have fun!
