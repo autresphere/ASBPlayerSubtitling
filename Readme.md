@@ -10,6 +10,9 @@ For now, only SRT format is suported. SRT is the main subtitle file format.
 
 If you use a container view to add border to your subtitle label, you must wire this container view to the corresponding ASBPlayerSubtitling outlet, such that the container view is hidden when no subtitle is shown.
 
+![](https://github.com/autresphere/ASBPlayerSubtitling/raw/master/Screenshots/styling.jpg) 
+
+
 Example
 -------
 See the contained example to get a sample of ASBPlayerSubtitling created with Interface Builder.
@@ -28,8 +31,8 @@ As ASBPlayerSubtitling is a pure behavior, it is highly reusable whatever your U
 
 Features
 --------
+* Support full SRT format with styling (bold, italic, underline, text color)
 * Update subtitle label depending on player time
-* Support SRT format
 
 Using
 -----
@@ -59,18 +62,12 @@ self.subtitling.label = subtitleLabel;
 [self.subtitling loadSubtitlesAtURL:subtitlesURL error:nil];
 ```
 
-Limitations
------------
-* SRT styled text is not supported.
-
-
 ARC Compatibility
 -----------------
 ASBPlayerSubtitling requires ARC. If you wish to use ASBPlayerSubtitling in a non-ARC project, just add the -fobjc-arc compiler flag to the ASBPlayerSubtitling.m class. To do this, go to the Build Phases tab in your target settings, open the Compile Sources group, double-click ASBPlayerSubtitling.m in the list and type -fobjc-arc into the popover.
 
 Todo
 ----
-* Support styled text
 * Optimize subtitle search
 * Support other subtitle formats
 

@@ -1,6 +1,6 @@
 1
 00:00:00,000 --> 00:00:03,000
-Welcome to ASBPlayerSubtitling!
+Welcome to <b>ASBPlayerSubtitling</b>!
 
 2
 00:00:04,000 --> 00:00:07,000
@@ -12,20 +12,21 @@ SRT format is the supported standard.
 
 4
 00:00:11,500 --> 00:00:15,000
-Subtitles can be shown
-on two lines.
+Subtitles can be
+shown on two lines
+or more.
 
 5
-00:00:16,000 --> 00:00:19,000
-Subtitles can also
-be shown on three
-lines or more.
+00:00:15,500 --> 00:00:21,000
+Simple styling can be used to show
+<b>bold</b>, <i>italic</i>, <u>underline</u>
+<font color="#CC33CC">and</font> <font color="#660099">also</font> <font color="#336600">colors</font>.
 
 6
-00:00:20,000 --> 00:00:24,000
+00:00:21,500 --> 00:00:25,000
 UILabel is used to show the subtitle,
 you can fully customize it.
 
 7
-00:00:24,500 --> 00:00:30,000
+00:00:25,500 --> 00:00:32,500
 Have fun!

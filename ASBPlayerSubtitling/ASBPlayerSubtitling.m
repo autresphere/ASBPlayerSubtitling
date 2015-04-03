@@ -9,7 +9,6 @@
 #import "ASBPlayerSubtitling.h"
 #import <UIKit/UIKit.h>
 
-
 @implementation ASBSubtitle
 @end
 
@@ -20,7 +19,8 @@
 @property (nonatomic, assign) CGFloat nbFramesPerSecond;
 @property (nonatomic, strong) NSMutableArray *subtitles;
 @property (nonatomic, strong) dispatch_queue_t queue;
-@property (nonatomic, strong) NSString *currentText;
+@property (nonatomic, copy) NSString *currentText;
+@property (nonatomic, copy) NSString *cssStyle;
 @end
 
 @implementation ASBPlayerSubtitling
@@ -57,6 +57,7 @@
     self.label.text = @"";
     self.containerView.hidden = YES;
     [self setupTimeObserver];
+    [self computeStyle];
 }
 
 - (void)loadSubtitlesAtURL:(NSURL *)url error:(NSError **)error
@@ -74,6 +75,50 @@
     {
         *error = localError;
     }
+}
+
+- (void)computeStyle
+{
+    NSString *textAlign;
+    NSString *color;
+    
+    textAlign = [self cssValueForTextAlignment:self.label.textAlignment];
+    color = [self cssValueForColor:self.label.textColor];
+    self.cssStyle = [NSString stringWithFormat:@"color: %@; font-size: %fpx; font-family: %@; text-align: %@", color, self.label.font.pointSize, self.label.font.familyName, textAlign];
+}
+
+- (NSString *)cssValueForTextAlignment:(NSTextAlignment)alignment
+{
+    switch (alignment)
+    {
+        case NSTextAlignmentLeft:
+            return @"left";
+            break;
+            
+        case NSTextAlignmentRight:
+            return @"right";
+            break;
+            
+        case NSTextAlignmentJustified:
+            return @"justify";
+            break;
+            
+        case NSTextAlignmentCenter:
+        case NSTextAlignmentNatural:
+            return @"center";
+            break;
+    }
+}
+
+- (NSString *)cssValueForColor:(UIColor *)color
+{
+    NSString *value;
+    CGFloat red, green, blue;
+    
+    [color getRed:&red green:&green blue:&blue alpha:NULL];
+    value = [NSString stringWithFormat:@"#%02X%02X%02X", (unsigned)round(red*255), (unsigned)round(green*255), (unsigned)round(blue*255)];
+    
+    return value;
 }
 
 - (void)removeSubtitles
@@ -199,9 +244,62 @@
     return time;
 }
 
+- (BOOL)isHTML:(NSString *)text
+{
+    NSRange range;
+    
+    range = [text rangeOfString:@"<"];
+    
+    return range.location != NSNotFound;
+}
+
+- (NSAttributedString *)attribuedStringFromHTMLText:(NSString *)text
+{
+    NSAttributedString *attributedString;
+    NSDictionary *options;
+    NSError *error;
+    NSString *html;
+    NSString *body;
+    
+    body = [text stringByReplacingOccurrencesOfString:@"\r\n" withString:@"</br>"];
+    body = [body stringByReplacingOccurrencesOfString:@"\n" withString:@"</br>"];
+    html = [NSString stringWithFormat:@"<body style=\"%@\">%@</body>", self.cssStyle, body];
+    
+    options = @{NSDocumentTypeDocumentAttribute: NSHTMLTextDocumentType,
+                NSCharacterEncodingDocumentAttribute: @(NSUTF8StringEncoding)};
+    
+    attributedString = [[NSAttributedString alloc] initWithData:[html dataUsingEncoding:NSUTF8StringEncoding]
+                                                        options:options
+                                             documentAttributes:nil
+                                                          error:&error];
+    
+    if(error != nil)
+    {
+        NSLog(@"%@", error);
+    }
+    
+    return attributedString;
+}
+
 - (void)updateLabel
 {
-    self.label.text = self.currentText;
+    if(self.currentText != nil)
+    {
+        if([self isHTML:self.currentText])
+        {
+            self.label.attributedText = [self attribuedStringFromHTMLText:self.currentText];
+        }
+        else
+        {
+            self.label.text = self.currentText;
+        }
+    }
+    else
+    {
+        self.label.attributedText = nil;
+        self.label.text = nil;
+    }
+    
     self.label.hidden = (self.currentText.length == 0) || !self.visible;
     self.containerView.hidden = self.label.hidden;
 }
