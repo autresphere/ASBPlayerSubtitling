@@ -12,7 +12,6 @@ If you use a container view to add border to your subtitle label, you must wire 
 
 ![](https://github.com/autresphere/ASBPlayerSubtitling/raw/master/Screenshots/styling.jpg) 
 
-
 Example
 -------
 See the contained example to get a sample of ASBPlayerSubtitling created with Interface Builder.
@@ -36,7 +35,7 @@ Features
 
 Using
 -----
-Use cocoapod or copy ASBPlayerSubtitling.h and ASBPlayerSubtitling.m in your project.
+Add `pod 'ASBPlayerSubtitling'` to your Podfile or copy ASBPlayerSubtitling.h and ASBPlayerSubtitling.m in your project.
 
 You can either create a ASBPlayerSubtitling by code or inside Interface Builder.
 
@@ -61,6 +60,10 @@ self.subtitling.player = player;
 self.subtitling.label = subtitleLabel;
 [self.subtitling loadSubtitlesAtURL:subtitlesURL error:nil];
 ```
+
+Supported iOS
+-------------
+iOS 7 and above.
 
 ARC Compatibility
 -----------------
