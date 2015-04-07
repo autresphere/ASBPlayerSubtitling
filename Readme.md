@@ -1,3 +1,4 @@
+[![Build Status](https://travis-ci.org/autresphere/ASBPlayerSubtitling.svg)](https://travis-ci.org/autresphere/ASBPlayerSubtitling)
 
 
 Purpose
