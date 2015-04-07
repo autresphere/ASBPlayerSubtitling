@@ -1,0 +1,316 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4A9481491AD403C50051515C /* ASBPlayerSubtitlingTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A9481481AD403C50051515C /* ASBPlayerSubtitlingTests.m */; };
+		4A94814F1AD406280051515C /* ASBPlayerSubtitling.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A94813E1AD401810051515C /* ASBPlayerSubtitling.m */; };
+		4A9481521AD409A50051515C /* welcome.srt in Resources */ = {isa = PBXBuildFile; fileRef = 4A9481511AD409A50051515C /* welcome.srt */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		4A9481311AD401380051515C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = ../ASBPlayerSubtitlingTests/Info.plist; sourceTree = "<group>"; };
+		4A9481321AD401380051515C /* ASBPlayerSubtitlingTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = ASBPlayerSubtitlingTests.m; path = ../ASBPlayerSubtitlingTests/ASBPlayerSubtitlingTests.m; sourceTree = "<group>"; };
+		4A94813D1AD401810051515C /* ASBPlayerSubtitling.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASBPlayerSubtitling.h; sourceTree = "<group>"; };
+		4A94813E1AD401810051515C /* ASBPlayerSubtitling.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASBPlayerSubtitling.m; sourceTree = "<group>"; };
+		4A9481441AD403C50051515C /* ASBPlayerSubtitlingTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ASBPlayerSubtitlingTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4A9481471AD403C50051515C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4A9481481AD403C50051515C /* ASBPlayerSubtitlingTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ASBPlayerSubtitlingTests.m; sourceTree = "<group>"; };
+		4A9481511AD409A50051515C /* welcome.srt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = welcome.srt; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4A9481411AD403C50051515C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4A94810A1AD401370051515C = {
+			isa = PBXGroup;
+			children = (
+				4A94813C1AD401810051515C /* ASBPlayerSubtitling */,
+				4A94812F1AD401380051515C /* ASBPlayerSubtitlingTests */,
+				4A9481501AD409A50051515C /* Resources */,
+				4A9481451AD403C50051515C /* ASBPlayerSubtitlingTests */,
+				4A9481141AD401370051515C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		4A9481141AD401370051515C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4A9481441AD403C50051515C /* ASBPlayerSubtitlingTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4A94812F1AD401380051515C /* ASBPlayerSubtitlingTests */ = {
+			isa = PBXGroup;
+			children = (
+				4A9481321AD401380051515C /* ASBPlayerSubtitlingTests.m */,
+				4A9481301AD401380051515C /* Supporting Files */,
+			);
+			name = ASBPlayerSubtitlingTests;
+			path = ASBPlayerSubtitlingTestsTests;
+			sourceTree = "<group>";
+		};
+		4A9481301AD401380051515C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				4A9481311AD401380051515C /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		4A94813C1AD401810051515C /* ASBPlayerSubtitling */ = {
+			isa = PBXGroup;
+			children = (
+				4A94813D1AD401810051515C /* ASBPlayerSubtitling.h */,
+				4A94813E1AD401810051515C /* ASBPlayerSubtitling.m */,
+			);
+			name = ASBPlayerSubtitling;
+			path = ../ASBPlayerSubtitling;
+			sourceTree = "<group>";
+		};
+		4A9481451AD403C50051515C /* ASBPlayerSubtitlingTests */ = {
+			isa = PBXGroup;
+			children = (
+				4A9481481AD403C50051515C /* ASBPlayerSubtitlingTests.m */,
+				4A9481461AD403C50051515C /* Supporting Files */,
+			);
+			path = ASBPlayerSubtitlingTests;
+			sourceTree = "<group>";
+		};
+		4A9481461AD403C50051515C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				4A9481471AD403C50051515C /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		4A9481501AD409A50051515C /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				4A9481511AD409A50051515C /* welcome.srt */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4A9481431AD403C50051515C /* ASBPlayerSubtitlingTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4A94814A1AD403C50051515C /* Build configuration list for PBXNativeTarget "ASBPlayerSubtitlingTests" */;
+			buildPhases = (
+				4A9481401AD403C50051515C /* Sources */,
+				4A9481411AD403C50051515C /* Frameworks */,
+				4A9481421AD403C50051515C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ASBPlayerSubtitlingTests;
+			productName = ASBPlayerSubtitlingTests;
+			productReference = 4A9481441AD403C50051515C /* ASBPlayerSubtitlingTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4A94810B1AD401370051515C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0620;
+				ORGANIZATIONNAME = AutreSphere;
+				TargetAttributes = {
+					4A9481431AD403C50051515C = {
+						CreatedOnToolsVersion = 6.2;
+					};
+				};
+			};
+			buildConfigurationList = 4A94810E1AD401370051515C /* Build configuration list for PBXProject "ASBPlayerSubtitlingTests" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4A94810A1AD401370051515C;
+			productRefGroup = 4A9481141AD401370051515C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4A9481431AD403C50051515C /* ASBPlayerSubtitlingTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4A9481421AD403C50051515C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4A9481521AD409A50051515C /* welcome.srt in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4A9481401AD403C50051515C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4A94814F1AD406280051515C /* ASBPlayerSubtitling.m in Sources */,
+				4A9481491AD403C50051515C /* ASBPlayerSubtitlingTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		4A9481341AD401380051515C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		4A9481351AD401380051515C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4A94814B1AD403C50051515C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = ASBPlayerSubtitlingTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		4A94814C1AD403C50051515C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = ASBPlayerSubtitlingTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4A94810E1AD401370051515C /* Build configuration list for PBXProject "ASBPlayerSubtitlingTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4A9481341AD401380051515C /* Debug */,
+				4A9481351AD401380051515C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4A94814A1AD403C50051515C /* Build configuration list for PBXNativeTarget "ASBPlayerSubtitlingTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4A94814B1AD403C50051515C /* Debug */,
+				4A94814C1AD403C50051515C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4A94810B1AD401370051515C /* Project object */;
+}
